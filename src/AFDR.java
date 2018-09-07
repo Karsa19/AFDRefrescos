@@ -2,7 +2,7 @@
 
 public class AFDR {
 	
-	char [] monedas;
+	private char [] monedas= {'D','D'};
 	int i=0;
 	
 	
@@ -404,6 +404,8 @@ public class AFDR {
 		if(m=='D') {
 			cambio=(numE+10)-15;
 		}
+		
+		System.out.println("cambio:" + cambio);
 		
 		return cambio;
 	}
