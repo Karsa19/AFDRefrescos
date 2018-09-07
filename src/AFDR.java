@@ -174,7 +174,6 @@ public class AFDR {
 		}
 		
 		if(monedas[i]=='D') {
-			i++;
 			eQ16(monedas[i],6);
 		}
 		
@@ -199,7 +198,6 @@ public class AFDR {
 		}
 		
 		if(monedas[i]=='D') {
-			i++;
 			eQ16(monedas[i],7);
 		}
 		
@@ -224,7 +222,6 @@ public class AFDR {
 		}
 		
 		if(monedas[i]=='D') {
-			i++;
 			eQ16(monedas[i],8);
 		}
 		
@@ -249,7 +246,6 @@ public class AFDR {
 		}
 		
 		if(monedas[i]=='D') {
-			i++;
 			eQ16(monedas[i],9);
 		}
 		
@@ -274,7 +270,6 @@ public class AFDR {
 		}
 		
 		if(monedas[i]=='D') {
-			i++;
 			eQ16(monedas[i],10);
 		}
 		
@@ -294,7 +289,6 @@ public class AFDR {
 		}
 		
 		if(monedas[i]=='5') {
-			i++;
 			eQ16(monedas[i],11);
 		}
 		
@@ -319,12 +313,10 @@ public class AFDR {
 		}
 		
 		if(monedas[i]=='5') {
-			i++;
 			eQ16(monedas[i],12);
 		}
 		
 		if(monedas[i]=='D') {
-			i++;
 			eQ16(monedas[i],12);
 		}
 		
@@ -344,12 +336,10 @@ public class AFDR {
 		}
 		
 		if(monedas[i]=='5') {
-			i++;
 			eQ16(monedas[i],13);
 		}
 		
 		if(monedas[i]=='D') {
-			i++;
 			eQ16(monedas[i],13);
 		}
 		
@@ -364,17 +354,14 @@ public class AFDR {
 		}
 		
 		if(monedas[i]=='2') {
-			i++;
 			eQ16(monedas[i],14);
 		}
 		
 		if(monedas[i]=='5') {
-			i++;
 			eQ16(monedas[i],14);
 		}
 		
 		if(monedas[i]=='D') {
-			i++;
 			eQ16(monedas[i],14);
 		}
 		
