@@ -13,6 +13,7 @@ public class VentanaMaqui extends JFrame implements ActionListener {
 	
 	private JButton moneda1, moneda2, moneda5, moneda10;
 	private JButton dmoneda, comprar;
+	private 
 	
 	AFDR ref= new AFDR();
 
@@ -95,6 +96,7 @@ public class VentanaMaqui extends JFrame implements ActionListener {
 		
 		if(e.getSource()==dmoneda) {
 			ref.monedas.clear();
+			ref.i=0;
 		}
 		
 		if(e.getSource()==comprar) {
