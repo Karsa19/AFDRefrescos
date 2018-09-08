@@ -43,7 +43,7 @@ public class AFDR {
 	public void eQ1() {
 		//Estado q1
 		
-		if(monedas.size()>i) {
+		if(monedas.size()>=i) {
 			if(monedas.get(i)=='1') {
 				i++;
 				eQ2();
@@ -71,7 +71,7 @@ public class AFDR {
 	public void eQ2() {
 		//Estado q2
 		
-		if(monedas.size()>i) {
+		if(monedas.size()>=i) {
 			if(monedas.get(i)=='1') {
 				i++;
 				eQ3();
@@ -100,7 +100,7 @@ public class AFDR {
 	
 	public void eQ3() {
 		//Estado q3
-		if(monedas.size()>i) {
+		if(monedas.size()>=i) {
 			if(monedas.get(i)=='1') {
 				i++;
 				eQ4();
@@ -130,7 +130,7 @@ public class AFDR {
 	public void eQ4() {
 		//Estado q4
 		
-		if(monedas.size()>i) {
+		if(monedas.size()>=i) {
 			if(monedas.get(i)=='1') {
 				i++;
 				eQ5();
@@ -160,7 +160,7 @@ public class AFDR {
 	
 	public void eQ5() {
 		
-		if(monedas.size()>i) {
+		if(monedas.size()>=i) {
 			if(monedas.get(i)=='1') {
 				i++;
 				eQ6();
@@ -175,11 +175,11 @@ public class AFDR {
 				i++;
 				eQ10();
 			}
-			
-		}
+
+			if(monedas.get(i)=='D') {
+				eQ15();
 		
-		if(monedas.get(i)=='D') {
-			eQ15();
+		}
 		}
 		
 		else {
@@ -191,7 +191,7 @@ public class AFDR {
 	public void eQ6() {
 		//Estado q6
 		
-		if(monedas.size()>i) {
+		if(monedas.size()>=i) {
 			if(monedas.get(i)=='1') {
 				i++;
 				eQ7();
@@ -206,11 +206,12 @@ public class AFDR {
 				i++;
 				eQ11();
 			}
-		}
 			
-		if(monedas.get(i)=='D') {
-			eQ16(monedas.get(i),6);
+			if(monedas.get(i)=='D') {
+				eQ16(monedas.get(i),6);
+			}
 		}
+		
 		
 		else {
 			acepta=false;
@@ -221,7 +222,7 @@ public class AFDR {
 	public void eQ7() {
 		//Estado q7
 		
-		if(monedas.size()>i) {
+		if(monedas.size()>=i) {
 			if(monedas.get(i)=='1') {
 				i++;
 				eQ8();
@@ -236,9 +237,9 @@ public class AFDR {
 				i++;
 				eQ12();
 			}
-		}
-		if(monedas.get(i)=='D') {
-			eQ16(monedas.get(i),7);
+			if(monedas.get(i)=='D') {
+				eQ16(monedas.get(i),7);
+			}
 		}
 		
 		
@@ -251,7 +252,7 @@ public class AFDR {
 	public void eQ8() {
 		//Estado q8
 		
-		if(monedas.size()>i) {
+		if(monedas.size()>=i) {
 			if(monedas.get(i)=='1') {
 				i++;
 				eQ9();
@@ -266,9 +267,9 @@ public class AFDR {
 				i++;
 				eQ13();
 			}
-		}
-		if(monedas.get(i)=='D') {
-			eQ16(monedas.get(i),8);
+			if(monedas.get(i)=='D') {
+				eQ16(monedas.get(i),8);
+			}
 		}
 		
 		
@@ -281,7 +282,7 @@ public class AFDR {
 	public void eQ9() {
 		//Estado q9
 		
-		if(monedas.size()>i) {
+		if(monedas.size()>=i) {
 			if(monedas.get(i)=='1') {
 				i++;
 				eQ10();
@@ -296,12 +297,10 @@ public class AFDR {
 				i++;
 				eQ14();
 			}
+			if(monedas.get(i)=='D') {
+				eQ16(monedas.get(i),9);
+			}
 		}
-		
-		if(monedas.get(i)=='D') {
-			eQ16(monedas.get(i),9);
-		}
-		
 		
 		else {
 			acepta=false;
@@ -312,7 +311,7 @@ public class AFDR {
 	public void eQ10() {
 		//Estado q10
 		
-		if(monedas.size()>i) {
+		if(monedas.size()>=i) {
 			if(monedas.get(i)=='1') {
 				i++;
 				eQ11();
@@ -321,16 +320,17 @@ public class AFDR {
 			if(monedas.get(i)=='2') {
 				i++;
 				eQ12();
-			}	
+			}
+			
+			if(monedas.get(i)=='5') {
+				eQ15();
+			}
+				
+			if(monedas.get(i)=='D') {
+				eQ16(monedas.get(i),10);
+			}
 		}
 		
-		if(monedas.get(i)=='5') {
-			eQ15();
-		}
-			
-		if(monedas.get(i)=='D') {
-			eQ16(monedas.get(i),10);
-		}
 		
 		else {
 			acepta=false;
@@ -341,7 +341,7 @@ public class AFDR {
 	public void eQ11() {
 		//Estado q11
 		
-		if(monedas.size()>i) {
+		if(monedas.size()>=i) {
 			if(monedas.get(i)=='1') {
 				i++;
 				eQ12();
@@ -351,17 +351,15 @@ public class AFDR {
 				i++;
 				eQ13();
 			}
+			if(monedas.get(i)=='5') {
+				eQ16(monedas.get(i),11);
+			}
+				
+				
+			if(monedas.get(i)=='D') {
+				eQ16(monedas.get(i),11);
+			}
 		}
-			
-		if(monedas.get(i)=='5') {
-			eQ16(monedas.get(i),11);
-		}
-			
-			
-		if(monedas.get(i)=='D') {
-			eQ16(monedas.get(i),11);
-		}
-		
 		
 		else {
 			acepta=false;
@@ -372,7 +370,7 @@ public class AFDR {
 	public void eQ12() {
 		//Estado q12
 		
-		if(monedas.size()>i) {
+		if(monedas.size()>=i) {
 			if(monedas.get(i)=='1') {
 				i++;
 				eQ13();
@@ -382,15 +380,15 @@ public class AFDR {
 				i++;
 				eQ14();
 			}
+			if(monedas.get(i)=='5') {
+				eQ16(monedas.get(i),12);
+			}
+			
+			if(monedas.get(i)=='D') {
+				eQ16(monedas.get(i),12);
+			}
 		}
 		
-		if(monedas.get(i)=='5') {
-			eQ16(monedas.get(i),12);
-		}
-		
-		if(monedas.get(i)=='D') {
-			eQ16(monedas.get(i),12);
-		}
 		
 		else {
 			acepta=false;
@@ -401,24 +399,24 @@ public class AFDR {
 	public void eQ13() {
 		//Estado q13
 		
-		if(monedas.size()>i) {
+		if(monedas.size()>=i) {
 			if(monedas.get(i)=='1') {
 				i++;
 				eQ14();
 			}
+			if(monedas.get(i)=='2') {
+				eQ15();
+			}
+			
+			if(monedas.get(i)=='5') {
+				eQ16(monedas.get(i),13);
+			}
+			
+			if(monedas.get(i)=='D') {
+				eQ16(monedas.get(i),13);
+			}
 		}
 		
-		if(monedas.get(i)=='2') {
-			eQ15();
-		}
-		
-		if(monedas.get(i)=='5') {
-			eQ16(monedas.get(i),13);
-		}
-		
-		if(monedas.get(i)=='D') {
-			eQ16(monedas.get(i),13);
-		}
 		
 		else {
 			acepta=false;
@@ -454,6 +452,7 @@ public class AFDR {
 	public void eQ15() {
 		//Estado Final
 		acepta=true;
+		cambio=0;
 	}
 	
 	public void eQ16(char m, int numE) {
