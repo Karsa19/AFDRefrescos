@@ -34,10 +34,7 @@ public class AFDR {
 			}
 		
 		}
-		
-		else {
-			acepta=false;
-		}
+
 	}
 	
 	public void eQ1() {
@@ -64,8 +61,7 @@ public class AFDR {
 				eQ11();
 			}
 		}
-		
-		acepta=false;
+
 	}
 	
 	public void eQ2() {
@@ -92,10 +88,6 @@ public class AFDR {
 				eQ12();
 			}
 		}
-		else {
-			acepta=false;
-		}
-		
 	}
 	
 	public void eQ3() {
@@ -121,10 +113,6 @@ public class AFDR {
 				eQ13();
 			}
 		}
-		else {
-			acepta=false;
-		}
-		
 	}
 	
 	public void eQ4() {
@@ -152,10 +140,6 @@ public class AFDR {
 			}
 		}
 		
-		else {
-			acepta=false;
-		}
-		
 	}
 	
 	public void eQ5() {
@@ -179,13 +163,9 @@ public class AFDR {
 			if(monedas.get(i)=='D') {
 				eQ15();
 		
+			}
 		}
-		}
-		
-		else {
-			acepta=false;
-		}
-		
+
 	}
 	
 	public void eQ6() {
@@ -211,12 +191,7 @@ public class AFDR {
 				eQ16(monedas.get(i),6);
 			}
 		}
-		
-		
-		else {
-			acepta=false;
-		}
-		
+
 	}
 	
 	public void eQ7() {
@@ -241,12 +216,7 @@ public class AFDR {
 				eQ16(monedas.get(i),7);
 			}
 		}
-		
-		
-		else {
-			acepta=false;
-		}
-		
+
 	}
 	
 	public void eQ8() {
@@ -270,11 +240,6 @@ public class AFDR {
 			if(monedas.get(i)=='D') {
 				eQ16(monedas.get(i),8);
 			}
-		}
-		
-		
-		else {
-			acepta=false;
 		}
 		
 	}
@@ -302,10 +267,6 @@ public class AFDR {
 			}
 		}
 		
-		else {
-			acepta=false;
-		}
-		
 	}
 	
 	public void eQ10() {
@@ -329,11 +290,6 @@ public class AFDR {
 			if(monedas.get(i)=='D') {
 				eQ16(monedas.get(i),10);
 			}
-		}
-		
-		
-		else {
-			acepta=false;
 		}
 		
 	}
@@ -361,10 +317,6 @@ public class AFDR {
 			}
 		}
 		
-		else {
-			acepta=false;
-		}
-		
 	}
 	
 	public void eQ12() {
@@ -388,12 +340,7 @@ public class AFDR {
 				eQ16(monedas.get(i),12);
 			}
 		}
-		
-		
-		else {
-			acepta=false;
-		}
-		
+
 	}
 	
 	public void eQ13() {
@@ -417,11 +364,6 @@ public class AFDR {
 			}
 		}
 		
-		
-		else {
-			acepta=false;
-		}
-		
 	}
 	
 	public void eQ14() {
@@ -441,10 +383,6 @@ public class AFDR {
 		
 		if(monedas.get(i)=='D') {
 			eQ16(monedas.get(i),14);
-		}
-		
-		else {
-			acepta=false;
 		}
 		
 	}
