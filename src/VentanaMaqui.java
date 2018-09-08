@@ -120,6 +120,15 @@ public class VentanaMaqui extends JFrame implements ActionListener {
 		
 		if(e.getSource()==comprar) {
 			ref.eQ0();
+			
+			if(ref.getAcepta()==true) {
+				pantalla.setText("Cambio: $ "+Integer.toString(ref.getCambio()));
+			}
+			
+			if(ref.getAcepta()==false){
+				pantalla.setText("Dinero Insuficiente");
+			}
+			
 		}
 		
 	}
