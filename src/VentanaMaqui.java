@@ -88,27 +88,35 @@ public class VentanaMaqui extends JFrame implements ActionListener {
 		// TODO Auto-generated method stub
 		
 		if(e.getSource()==moneda1) {
-			dinero=dinero+1;
-			ref.monedas.add('1');
-			pantalla.setText("$ "+Integer.toString(dinero));
+			if(dinero<15) {
+				dinero=dinero+1;
+				ref.monedas.add('1');
+				pantalla.setText("$ "+Integer.toString(dinero));
+			}
 		}
 		
 		if(e.getSource()==moneda2) {
-			dinero=dinero+2;
-			ref.monedas.add('2');
-			pantalla.setText("$ "+Integer.toString(dinero));
+			if(dinero<15) {
+				dinero=dinero+2;
+				ref.monedas.add('2');
+				pantalla.setText("$ "+Integer.toString(dinero));
+			}
 		}
 		
 		if(e.getSource()==moneda5) {
-			dinero=dinero+5;
-			ref.monedas.add('5');
-			pantalla.setText("$ "+Integer.toString(dinero));
+			if(dinero<15) {
+				dinero=dinero+5;
+				ref.monedas.add('5');
+				pantalla.setText("$ "+Integer.toString(dinero));
+			}
 		}
 		
 		if(e.getSource()==moneda10) {
-			dinero=dinero+10;
-			ref.monedas.add('D');
-			pantalla.setText("$ "+Integer.toString(dinero));
+			if(dinero<15) {
+				dinero=dinero+10;
+				ref.monedas.add('D');
+				pantalla.setText("$ "+Integer.toString(dinero));
+			}
 		}
 		
 		if(e.getSource()==dmoneda) {
