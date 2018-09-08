@@ -1,8 +1,8 @@
 
 public class mainRefrescos {
 	public static void main(String[] args) {
-		AFDR ref= new AFDR();
 		
-		ref.eQ0();
+		VentanaMaqui vmaqui= new VentanaMaqui();
+		vmaqui.setVisible(true);
 	}
 }
