@@ -177,7 +177,6 @@ public class AFDR {
 			}
 			
 			if(monedas.get(i)=='D') {
-				i++;
 				eQ15();
 			}
 		}
@@ -324,7 +323,6 @@ public class AFDR {
 			}
 			
 			if(monedas.get(i)=='5') {
-				i++;
 				eQ15();
 			}
 		}
@@ -409,7 +407,6 @@ public class AFDR {
 			}
 			
 			if(monedas.get(i)=='2') {
-				i++;
 				eQ15();
 			}
 		}
@@ -433,7 +430,6 @@ public class AFDR {
 		
 		if(monedas.size()>=15) {
 			if(monedas.get(i)=='1') {
-				i++;
 				eQ15();
 			}
 		}
