@@ -1,8 +1,10 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JRadioButton;
 import javax.swing.JTextArea;
 
 public class VentanaMaqui extends JFrame implements ActionListener {
@@ -13,6 +15,8 @@ public class VentanaMaqui extends JFrame implements ActionListener {
 	private static final long serialVersionUID = 1L;
 	
 	private JButton moneda1, moneda2, moneda5, moneda10;
+	private ButtonGroup sabores;
+	private JRadioButton coca, manzana, fanta;
 	private JButton dmoneda, comprar;
 	private JTextArea pantalla;
 	private int dinero=0;
@@ -29,7 +33,7 @@ public class VentanaMaqui extends JFrame implements ActionListener {
 	
 	private void configVentana() {
         this.setTitle("Maquina de Refrescos");                   
-        this.setSize(310, 210);                                 
+        this.setSize(320, 280);                                 
         this.setLocationRelativeTo(null);                       
         this.setLayout(null);                                   
         this.setResizable(false);                               
@@ -42,6 +46,10 @@ public class VentanaMaqui extends JFrame implements ActionListener {
 		moneda2 = new JButton();
 		moneda5 = new JButton();
 		moneda10 = new JButton();
+		sabores= new ButtonGroup();
+		coca= new JRadioButton("Coca");
+		manzana= new JRadioButton("Manzana");
+		fanta= new JRadioButton("Fanta");
 		dmoneda= new JButton();
 		comprar= new JButton();
 		
@@ -66,12 +74,20 @@ public class VentanaMaqui extends JFrame implements ActionListener {
 		moneda10.setBounds(230,90,60,30);
 		moneda10.addActionListener(this);
 		
+		sabores.add(coca);
+		sabores.add(manzana);
+		sabores.add(fanta);
+		
+		coca.setBounds(40, 140, 60, 30);
+		manzana.setBounds(100, 140, 80, 30);
+		fanta.setBounds(180, 140, 60, 30);
+		
 		dmoneda.setText("Devolver");
-		dmoneda.setBounds(50,140,100,30);
+		dmoneda.setBounds(50,200,100,30);
 		dmoneda.addActionListener(this);
 		
 		comprar.setText("Comprar");
-		comprar.setBounds(170,140,100,30);
+		comprar.setBounds(170,200,100,30);
 		comprar.addActionListener(this);
 		
 		this.add(pantalla);
@@ -79,6 +95,9 @@ public class VentanaMaqui extends JFrame implements ActionListener {
 		this.add(moneda2);
 		this.add(moneda5);
 		this.add(moneda10);
+		this.add(coca);
+		this.add(manzana);
+		this.add(fanta);
 		this.add(dmoneda);
 		this.add(comprar);
 	}
