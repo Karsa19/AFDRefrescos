@@ -184,6 +184,10 @@ public class VentanaMaqui extends JFrame implements ActionListener {
 				pantalla.setText("Dinero Insuficiente");
 			}
 			
+			coca.setVisible(false);
+			manzana.setVisible(false);
+			fanta.setVisible(false);
+			
 		}
 		
 	}
