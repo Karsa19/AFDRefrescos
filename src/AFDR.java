@@ -24,8 +24,10 @@ public class AFDR {
 			else if (monedas.get(i) == 'D')
 				eQ10();
 
-		} else
+		}
+		else {
 			acepta = false;
+		}
 	}
 
 	public void eQ1() {

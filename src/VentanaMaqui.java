@@ -1,3 +1,4 @@
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -19,6 +20,7 @@ public class VentanaMaqui extends JFrame implements ActionListener {
 	private JRadioButton coca, manzana, fanta;
 	private JButton dmoneda, comprar;
 	private JTextArea pantalla;
+	Font fuente=new Font("Dialog", Font.BOLD, 24);
 	private int dinero=0;
 	private 
 	
@@ -57,6 +59,7 @@ public class VentanaMaqui extends JFrame implements ActionListener {
 		pantalla.setText("$ 00");
 		pantalla.setEditable(false);
 		pantalla.setBounds(50,30,200,30);
+		pantalla.setFont(fuente);
 		
 		moneda1.setText("$1");
 		moneda1.setBounds(20,90,60,30);
