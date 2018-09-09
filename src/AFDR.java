@@ -11,7 +11,7 @@ public class AFDR {
 	public void eQ0() {
 		
 		
-		if (monedas.size() >= (i+1)) {
+		if (monedas.size() > (i+1)) {
 			if (monedas.get(i) == '1')
 				eQ1();
 
@@ -32,7 +32,7 @@ public class AFDR {
 
 	public void eQ1() {
 		
-		if (monedas.size() >= (i+1)) {
+		if (monedas.size() > (i+1)) {
 			i++;
 			if (monedas.get(i) == '1')
 				eQ2();
@@ -51,7 +51,7 @@ public class AFDR {
 
 	public void eQ2() {
 		
-		if (monedas.size() >= (i+1)) {
+		if (monedas.size() > (i+1)) {
 			i++;
 			if (monedas.get(i) == '1')
 				eQ3();
@@ -71,7 +71,7 @@ public class AFDR {
 
 	public void eQ3() {
 		
-		if (monedas.size() >= (i+1)) {
+		if (monedas.size() > (i+1)) {
 			i++;
 			if (monedas.get(i) == '1')
 				eQ4();
@@ -90,7 +90,7 @@ public class AFDR {
 
 	public void eQ4() {
 		
-		if (monedas.size() >= (i+1)) {
+		if (monedas.size() > (i+1)) {
 			i++;
 			if (monedas.get(i) == '1')
 				eQ5();
@@ -109,7 +109,7 @@ public class AFDR {
 
 	public void eQ5() {
 		
-		if (monedas.size() >= (i+1)) {
+		if (monedas.size() > (i+1)) {
 			i++;
 			if (monedas.get(i) == '1')
 				eQ6();
@@ -129,7 +129,7 @@ public class AFDR {
 
 	public void eQ6() {
 		
-		if (monedas.size() >= (i+1)) {
+		if (monedas.size() > (i+1)) {
 			i++;
 			if (monedas.get(i) == '1')
 				eQ7();
@@ -148,7 +148,7 @@ public class AFDR {
 
 	public void eQ7() {
 		
-		if (monedas.size() >= (i+1)) {
+		if (monedas.size() > (i+1)) {
 			i++;
 			if (monedas.get(i) == '1')
 				eQ8();
@@ -169,7 +169,7 @@ public class AFDR {
 
 	public void eQ8() {
 		
-		if (monedas.size() >= (i+1)) {
+		if (monedas.size() > (i+1)) {
 			i++;
 			if (monedas.get(i) == '1')
 				eQ9();
@@ -190,7 +190,7 @@ public class AFDR {
 
 	public void eQ9() {
 		
-		if (monedas.size() >= (i+1)) {
+		if (monedas.size() > (i+1)) {
 			i++;
 			if (monedas.get(i) == '1')
 				eQ10();
@@ -210,7 +210,7 @@ public class AFDR {
 
 	public void eQ10() {
 		
-		if (monedas.size() >= (i+1)) {
+		if (monedas.size() > (i+1)) {
 			i++;
 			if (monedas.get(i) == '1')
 				eQ11();
@@ -230,7 +230,7 @@ public class AFDR {
 
 	public void eQ11() {
 		
-		if (monedas.size() >= (i+1)) {
+		if (monedas.size() > (i+1)) {
 			i++;
 			if (monedas.get(i) == '1')
 				eQ12();
@@ -252,7 +252,7 @@ public class AFDR {
 
 	public void eQ12() {
 		
-		if (monedas.size() >= (i+1)) {
+		if (monedas.size() > (i+1)) {
 			i++;
 			if (monedas.get(i) == '1')
 				eQ13();
@@ -271,7 +271,7 @@ public class AFDR {
 
 	public void eQ13() {
 		
-		if (monedas.size() >= (i+1)) {
+		if (monedas.size() > (i+1)) {
 			i++;
 			if (monedas.get(i) == '1')
 				eQ14();
@@ -290,7 +290,7 @@ public class AFDR {
 
 	public void eQ14() {
 		
-		if (monedas.size() >= (i+1)) {
+		if (monedas.size() > (i+1)) {
 			i++;
 			if (monedas.get(i) == '1')
 				eQ15();

@@ -20,7 +20,7 @@ public class VentanaMaqui extends JFrame implements ActionListener {
 	private JRadioButton coca, manzana, fanta;
 	private JButton dmoneda, comprar;
 	private JTextArea pantalla;
-	Font fuente=new Font("Dialog", Font.BOLD, 24);
+	Font fuente=new Font("Dialog", Font.BOLD, 20);
 	private int dinero=0;
 	private 
 	
