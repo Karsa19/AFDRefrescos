@@ -79,8 +79,11 @@ public class VentanaMaqui extends JFrame implements ActionListener {
 		sabores.add(fanta);
 		
 		coca.setBounds(40, 140, 60, 30);
+		coca.setVisible(false);
 		manzana.setBounds(100, 140, 80, 30);
+		manzana.setVisible(false);
 		fanta.setBounds(180, 140, 60, 30);
+		fanta.setVisible(false);
 		
 		dmoneda.setText("Devolver");
 		dmoneda.setBounds(50,200,100,30);
@@ -106,11 +109,18 @@ public class VentanaMaqui extends JFrame implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
 		
+		
 		if(e.getSource()==moneda1) {
 			if(dinero<15) {
 				dinero=dinero+1;
 				ref.monedas.add('1');
 				pantalla.setText("$ "+Integer.toString(dinero));
+			}
+			
+			if(dinero>=15) {
+				coca.setVisible(true);
+				manzana.setVisible(true);
+				fanta.setVisible(true);
 			}
 		}
 		
@@ -120,6 +130,12 @@ public class VentanaMaqui extends JFrame implements ActionListener {
 				ref.monedas.add('2');
 				pantalla.setText("$ "+Integer.toString(dinero));
 			}
+			
+			if(dinero>=15) {
+				coca.setVisible(true);
+				manzana.setVisible(true);
+				fanta.setVisible(true);
+			}
 		}
 		
 		if(e.getSource()==moneda5) {
@@ -128,6 +144,12 @@ public class VentanaMaqui extends JFrame implements ActionListener {
 				ref.monedas.add('5');
 				pantalla.setText("$ "+Integer.toString(dinero));
 			}
+			
+			if(dinero>=15) {
+				coca.setVisible(true);
+				manzana.setVisible(true);
+				fanta.setVisible(true);
+			}
 		}
 		
 		if(e.getSource()==moneda10) {
@@ -135,6 +157,12 @@ public class VentanaMaqui extends JFrame implements ActionListener {
 				dinero=dinero+10;
 				ref.monedas.add('D');
 				pantalla.setText("$ "+Integer.toString(dinero));
+			}
+			
+			if(dinero>=15) {
+				coca.setVisible(true);
+				manzana.setVisible(true);
+				fanta.setVisible(true);
 			}
 		}
 		
